@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Feedback Form</title>
+</head>
+<body></body>
+    <header>
+        <h1>User Feedback Form</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">Profile</a> |
+        <a href="#">Settings</a> |
+        <a href="#">Help</a>
+    </nav>
+    <main>
+        <article>
+            <section>
+                <h2>We Value Your Feedback</h2>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required maxlength="50">
+                    <br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+                    <fieldset>
+                        <legend>Are you satisfied with the recent updates?</legend>
+                        <input type="radio" id="yes" name="satisfaction" value="Yes" required>
+                        <label for="yes">Yes</label>
+
+                        <input type="radio" id="no" name="satisfaction" value="No">
+                        <label for="no">No</label>
+                    </fieldset>
+                    <br>
+                    <label for="feature">Preferred Feature:</label>
+                    <select id="feature" name="feature">
+                        <option value="Feature A">Feature A</option>
+                        <option value="Feature B">Feature B</option>
+                        <option value="Feature C">Feature C</option>
+                    </select>
+                    <br><br>
+                    <label for="comments">Additional Comments:</label>
+                    <textarea id="comments" name="comments" rows="5" cols="30" maxlength="500"></textarea>
+                    <br><br>
+                    <button type="submit">Submit Feedback</button>
+                </form>
+            </section>
+            <section>
+                <h2>Learn More About the New Features</h2>
+                <h3>Feature Tutorial</h3>
+                <video controls width="400">
+                    <source src="https://via.placeholder.com/150" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <br><br>
+                <h3>Update Notification Sound</h3>
+                <audio controls>
+                    <source src="https://via.placeholder.com/150" type="audio/mp3">
+                    Your browser does not support the audio tag.
+                </audio>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>© 2024 LaunchDarkly. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
