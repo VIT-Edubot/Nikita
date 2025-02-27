@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="background">
+
+<header>
+    <h1>User Feedback Form</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Updates</a>
+        <a href="#">Support</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <article id="feedback-form">
+        <h2>We Value Your Feedback</h2>
+        <p>Please provide your feedback below:</p>
+        
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <fieldset>
+                <legend>Are you satisfied with the recent updates?</legend>
+                <input type="radio" id="yes" name="satisfaction" value="Yes" required>
+                <label for="yes">Yes</label>
+
+                <input type="radio" id="no" name="satisfaction" value="No">
+                <label for="no">No</label>
+            </fieldset>
+            
+            <label for="feature">Preferred Feature:</label>
+            <select id="feature" name="feature">
+                <option value="Feature A">Feature A</option>
+                <option value="Feature B">Feature B</option>
+                <option value="Feature C">Feature C</option>
+            </select>
+            
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="5" cols="30" maxlength="500"></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </article>
+
+    <section>
+        <h2>Learn More About the New Features</h2>
+        
+        <h3>Feature Tutorial</h3>
+        <video controls width="400">
+            <source src="https://via.placeholder.com/150" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <h3>Update Notification Sound</h3>
+        <audio controls>
+            <source src="https://via.placeholder.com/150" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </section>
+</main>
+
+<footer>
+    <p>© 2024 LaunchDarkly. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
